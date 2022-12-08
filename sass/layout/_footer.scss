@@ -1,0 +1,102 @@
+.footer {
+  background-color: var(--second-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    gap: 93px;
+    align-items: baseline;
+  }
+
+  &__wrap--grow {
+    flex-grow: 1;
+  }
+
+  &__join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--first-bg-color);
+
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  &__email {
+    flex-grow: 1;
+
+    padding: 14px 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: var(--first-bg-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    outline: transparent;
+
+    transition-property: border-color;
+    transition-duration: var(--main-transition-duration);
+    transition-timing-function: var(--main-transition-timing-function);
+    &:focus {
+      border-color: var(--first-bg-color);
+    }
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__icon {
+    fill: var(--first-bg-color);
+  }
+}
+
+.address {
+  font-style: inherit;
+  margin-top: 20px;
+
+  &-item:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  &__map {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--first-bg-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
