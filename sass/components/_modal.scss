@@ -28,6 +28,10 @@
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
 
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+
   .backdrop.is-hidden & {
     transform: translate(-50%, -100%);
   }
@@ -158,12 +162,15 @@
   align-items: center;
   justify-content: center;
   gap: 7px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__check {

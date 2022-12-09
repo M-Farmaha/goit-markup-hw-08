@@ -33,7 +33,7 @@
         <ul class="contact">
           <li class="contact__item">
             <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
+              <svg class="contact__icon" width="14" height="10">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
@@ -41,7 +41,7 @@
           </li>
           <li class="contact__item">
             <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10" height="16">
+              <svg class="contact__icon" width="10" height="14">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -144,6 +144,27 @@
               </div>
               <h3 class="adv__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="adv__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section class="work">
+        <div class="container">
+          <h2 class="title work__title">Чим ми займаємося</h2>
+          <ul class="work__list">
+            <li class="work__item">
+              <p class="work__subtitle">Десктопні додатки</p>
+              <img class="work__img" srcset="./images/work-desk-1x.jpg 1x, ./images/work-desk-2x.jpg 2x" src="./images/work-desk-1x.jpg" alt="Десктопні додатки" width="370" height="294" />
+            </li>
+            <li class="work__item">
+              <p class="work__subtitle">Мобільні додатки</p>
+              <img class="work__img" srcset="./images/work-mob-1x.jpg 1x, ./images/work-mob-2x.jpg 2x" src="./images/work-mob-1x.jpg" alt="Мобільні додатки" width="370" height="294" />
+            </li>
+            <li class="work__item">
+              <p class="work__subtitle">Дизайнерські рішення</p>
+              <img class="work__img" srcset="./images/work-tab-1x.jpg 1x, ./images/work-tab-2x.jpg 2x" src="./images/work-tab-1x.jpg" alt="Дизайнерські рішення" width="370" height="294" />
             </li>
           </ul>
         </div>
@@ -382,50 +403,52 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__wrap">
-          <!-- logo -->
-          <a class="logo" href="./index.html">Web<span class="logo--white-text">Studio</span></a>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item"><a class="address__map" href="https://goo.gl/maps/GGHUYbkFzDP6m6Ls8" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
-              <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-          </address>
-        </div>
+        <div class="footer__wrapper">
+          <div class="footer__wrap">
+            <!-- logo -->
+            <a class="logo" href="./index.html">Web<span class="logo--white-text">Studio</span></a>
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item"><a class="address__map" href="https://goo.gl/maps/GGHUYbkFzDP6m6Ls8" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
+                <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              </ul>
+            </address>
+          </div>
 
-        <div class="footer__wrap">
-          <p class="footer__join">приєднуйтесь</p>
-          <ul class="social">
-            <li class="social__item">
-              <a href="" class="social__link social__link--dark" target="_blank" rel="noopener noreferrer">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--dark" target="_blank" rel="noopener noreferrer">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--dark" target="_blank" rel="noopener noreferrer">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--dark" target="_blank" rel="noopener noreferrer">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="footer__wrap">
+            <p class="footer__join">приєднуйтесь</p>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link social__link--dark" target="_blank" rel="noopener noreferrer">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--dark" target="_blank" rel="noopener noreferrer">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--dark" target="_blank" rel="noopener noreferrer">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--dark" target="_blank" rel="noopener noreferrer">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer__wrap footer__wrap--grow">
