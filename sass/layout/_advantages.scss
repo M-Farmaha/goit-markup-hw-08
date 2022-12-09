@@ -1,23 +1,20 @@
 .adv {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__item {
-    max-width: 270px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
     background-color: var(--alt-bg-color);
     border-radius: 4px;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
     margin-bottom: 30px;
   }
 
@@ -27,7 +24,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
-
+    text-align: center;
     margin-bottom: 10px;
   }
 

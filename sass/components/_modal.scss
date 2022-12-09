@@ -1,9 +1,11 @@
 .backdrop {
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 
   transition-property: opacity, visibility;
   transition-duration: var(--main-transition-duration);
@@ -11,8 +13,7 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
   padding: 40px;
   background-color: var(--first-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -28,7 +29,7 @@
   transition-timing-function: var(--main-transition-timing-function);
 
   .backdrop.is-hidden & {
-    transform: translate(-150%, -50%);
+    transform: translate(-50%, -100%);
   }
 }
 
@@ -66,7 +67,7 @@
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -139,7 +140,7 @@
 
 .modal__input--privacy {
   position: absolute;
-  left: 67px;
+  left: 56px;
   bottom: 126px;
   width: 1px;
   height: 1px;
@@ -158,8 +159,8 @@
   justify-content: center;
   gap: 7px;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   margin-bottom: 30px;

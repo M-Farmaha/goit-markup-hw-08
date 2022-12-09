@@ -1,23 +1,20 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--alt-bg-color);
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
 
   &__item {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   &__wrap {
     background-color: var(--first-bg-color);
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 24px;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
   }
