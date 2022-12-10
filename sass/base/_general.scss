@@ -1,10 +1,11 @@
 body {
+  overflow-x: hidden;
   min-width: 480px;
   background-color: var(--first-bg-color);
   color: var(--first-text-color);
   font-family: "Roboto", sans-serif;
   &.modal-open {
-    overflow: hidden;
+    overscroll-behavior: none;
   }
 }
 
