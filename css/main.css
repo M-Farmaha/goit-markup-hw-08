@@ -62,7 +62,7 @@ button {
 }
 
 body {
-  min-width: 480px;
+  min-width: 240px;
   background-color: var(--first-bg-color);
   color: var(--first-text-color);
   font-family: "Roboto", sans-serif;
@@ -78,21 +78,24 @@ a {
 }
 
 .container {
-  min-width: 120px;
-  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -455,6 +458,7 @@ a {
           justify-content: space-between;
 }
 .menu__navigation {
+  width: auto;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
@@ -731,7 +735,7 @@ a {
 }
 
 .hero {
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   margin: 0 auto;
   padding: 118px 0px;
@@ -745,7 +749,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/hero-tablet-1x.jpg") 1x, url("../images/hero-tablet-2x.jpg") 2x);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/hero-tablet-1x.jpg") 1x, url("../images/hero-tablet-2x.jpg") 2x);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/hero-tablet-1x.jpg") 1x, url("../images/hero-tablet-2x.jpg") 2x);
@@ -777,7 +781,7 @@ a {
 }
 .hero__title {
   display: inline-block;
-  width: 450px;
+  max-width: 450px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -993,8 +997,16 @@ a {
   gap: 30px;
 }
 .clients__item {
-  width: 210px;
   height: 92px;
+  min-width: 140px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
