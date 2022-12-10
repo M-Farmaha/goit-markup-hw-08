@@ -62,15 +62,9 @@ button {
 }
 
 body {
-  overflow-x: hidden;
-  min-width: 480px;
   background-color: var(--first-bg-color);
   color: var(--first-text-color);
   font-family: "Roboto", sans-serif;
-}
-body.modal-open {
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
 }
 
 a {
