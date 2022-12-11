@@ -496,6 +496,7 @@ a {
 .menu.is-open {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+  z-index: 99;
 }
 .menu__navigation {
   width: auto;
