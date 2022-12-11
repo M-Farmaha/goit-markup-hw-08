@@ -36,6 +36,10 @@
     width: 528px;
   }
 
+  @media screen and (max-height: 613px) {
+    margin-top: calc((613px - 100vh) * 0.5);
+  }
+
   .backdrop.is-hidden & {
     transform: translate(-50%, -100%);
   }
@@ -81,8 +85,8 @@
   color: var(--title-text-color);
   margin-bottom: 12px;
 
-  @media screen and (max-width: 270px) {
-    font-size: calc(100vw / 13.5);
+  @media screen and (max-width: 340px) {
+    font-size: calc((100vw - 100px) / 12);
   }
 }
 
@@ -181,8 +185,8 @@
     line-height: 1.71;
   }
 
-  @media screen and (max-width: 370px) {
-    font-size: calc((100vw - 130px) / 20);
+  @media screen and (max-width: 479px) {
+    font-size: calc((100vw - 150px) / 27.5);
   }
 }
 

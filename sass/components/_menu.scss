@@ -1,5 +1,7 @@
 .menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--first-bg-color);
   font-weight: 500;
   width: 100%;
@@ -10,11 +12,14 @@
   top: 0px;
   left: 0px;
   overflow: auto;
+  transform: translateY(-100%);
+
+  transition-property: transform;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
 
   &.is-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    transform: translateY(0%);
   }
 
   &__navigation {
