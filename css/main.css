@@ -488,7 +488,7 @@ a {
 .menu__link {
   color: var(--title-text-color);
 }
-.menu__link:hover, .menu__link:focus {
+.menu__link:focus {
   color: var(--accent-color);
 }
 .menu__link--soc {
