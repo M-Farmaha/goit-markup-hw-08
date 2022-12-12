@@ -1333,6 +1333,11 @@ a {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
+@media screen and (max-width: 479px) {
+  .portfolio__description {
+    overflow: auto;
+  }
+}
 .portfolio__group {
   background-color: var(--first-bg-color);
   border-bottom: 1px solid #eeeeee;

@@ -63,6 +63,10 @@
     .portfolio__link:focus & {
       transform: translateY(0%);
     }
+
+    @media screen and (max-width: 479px) {
+      overflow: auto;
+    }
   }
 
   &__group {
