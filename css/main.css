@@ -456,6 +456,11 @@ a {
   -webkit-transition-timing-function: var(--main-transition-timing-function);
           transition-timing-function: var(--main-transition-timing-function);
 }
+@media screen and (min-width: 480px) {
+  .menu {
+    padding: 48px calc(40px + (100% - 480px) * 0.5);
+  }
+}
 .menu.is-open {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
@@ -741,7 +746,7 @@ a {
   -webkit-transition-timing-function: var(--main-transition-timing-function);
           transition-timing-function: var(--main-transition-timing-function);
 }
-.burger-btn:hover, .burger-btn:focus {
+.burger-btn:focus {
   color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
@@ -756,6 +761,11 @@ a {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .burger-btn--close {
+    right: calc(15px + (100% - 480px) * 0.5);
+  }
 }
 
 .hero {
@@ -1273,7 +1283,14 @@ a {
   }
 }
 .portfolio__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1322,6 +1339,9 @@ a {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .portfolio__subtitle {
   font-size: 18px;

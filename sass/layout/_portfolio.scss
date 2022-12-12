@@ -23,7 +23,9 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     transition-property: box-shadow;
     transition-duration: var(--main-transition-duration);
@@ -68,8 +70,8 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
-
     padding: 20px 24px;
+    flex-grow: 1;
   }
 
   &__subtitle {

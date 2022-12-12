@@ -133,7 +133,6 @@
   transition-property: color;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
-  &:hover,
   &:focus {
     color: var(--accent-color);
   }
@@ -150,5 +149,8 @@
     position: absolute;
     top: 10px;
     right: 15px;
+    @media screen and (min-width: 480px) {
+      right: calc(15px + ((100% - 480px) * 0.5));
+    }
   }
 }
