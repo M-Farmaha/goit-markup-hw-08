@@ -235,9 +235,9 @@ a {
     width: 528px;
   }
 }
-@media screen and (max-height: 613px) {
+@media screen and (max-height: 750px) {
   .modal {
-    margin-top: calc((613px - 100vh) * 0.5);
+    margin-top: calc((750px - 100vh) * 0.5);
   }
 }
 .backdrop.is-hidden .modal {
